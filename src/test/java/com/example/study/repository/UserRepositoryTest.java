@@ -34,7 +34,7 @@ public class UserRepositoryTest extends StudyApplicationTests {
 
     @Test
     public void read(){
-        Optional<User> user = userRepository.findById(2L);
+        Optional<User> user = userRepository.findById(7L);
 
         user.ifPresent(selectUser ->{
             System.out.println("user : " + selectUser);
